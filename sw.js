@@ -1,4 +1,4 @@
-const CACHE_NAME = 'kessan-challenge-shobo-v2';
+const CACHE_NAME = 'kessan-challenge-shobo-v3';
 const ASSETS = ['./', './index.html', './manifest.json', './icon-192.png', './icon-512.png', './apple-touch-icon.png'];
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(ASSETS)).catch(() => {}));
